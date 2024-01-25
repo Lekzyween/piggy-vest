@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overscroll-behavior: auto;
+    background-color: rgb(242, 247, 248);
+}
+
+.container{
+    margin: auto;
+}
+/* header */
+header{
+    background-color: white;
+    padding: 25px 16px;
+    width: 100%;
+    position: sticky;
+    transition: all .2s ease-in-out;
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    padding: 0px 190px;
+}
+
+.drop-save li a{
+    color: rgb(89,106,120);
+}
+
+.sign-in{
+    border: 1px solid rgb(111,121,128);
+}
+
+.free{
+    background-color: rgb(18,34,49);
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.icon-1{
+    display: none;
+}
+/* save drop down */
+.piggy-bank{
+    background-color: white;
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+    border-radius: 8px;
+}
+
+.target-d:hover .piggy-bank{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+}
+.target-d{
+    position: relative;
+}
+.piggy-bank p{
+    font-size: 16px;
+}
+/* resources drop down */
+
+.resource-d{
+    position: relative;
+}
+.resource{
+    background-color: white;
+    position: absolute;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+    border-radius: 8px;
+}
+
+.resource-d:hover .resource{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+}
+
+/* media query */
+@media (max-width:1024px) {
+    nav{
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width:993px) {
+    .save, .sign-in, .free{
+        display: none;
+    }
+
+    .icon-1{
+        display: block;
+        padding: 10px;
+    }
+
+    nav{
+        padding: 0px 30px;
+    }
+}
+
+/* interest */
+.interest{
+    padding: 10rem 3rem;
+    gap: 40px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.interest .sec-1 h1{
+    font-weight: 500;
+    font-size: 48px;
+    color: #202c57;
+    line-height: 82.42px;
+    margin: 0;
+}
+
+.interest .sec-1 p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    color: #213752;
+    margin-bottom: 2rem;
+    margin: 0;
+}
+
+.input-c{
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-c label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0a1026;
+    margin-bottom: 10px;
+}
+
+.input-c input{
+    height: 55px;
+    border-radius: 10px;
+    font-weight: 500;
+    letter-spacing: .01em;
+    outline: none;
+    background: #f4f9ff;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0a1026;
+    padding: 0 10px;
+    border: 1px solid #202c57;
+}
+
+.input-c img{
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    right: 18px;
+    width: 30px;
+    /* z-index: 100; */
+    cursor: pointer;
+}
+
+.sec-1 button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    width: 260px;
+    height: 55px;
+    color: #fff;
+    background: #154abb;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    opacity: .7;
+    cursor: not-allowed;
+    outline: none;
+    border: none;
+}
+
+
+@media (max-width:1024px) {
+    .interest{
+        justify-content: center;
+        padding: 10rem 4rem;
+    }
+
+}
+
+@media (max-width:992px) {
+    .sec-1 button{
+        margin-left: 7em;
+    }
+}
+
+@media (max-width:600px) {
+    .interest{
+        justify-content: center;
+        padding: 8rem 0 5rem;
+    }
+    .sec-1 button{
+        margin-left: 0px;
+    }
+
+    .sec-2 img{
+        width: 288px;
+    }
+
+    .sec-1{
+        width: 85vw;
+    }
+
+    .interest .sec-1 h1{
+    
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .interest .sec-1 p{
+        font-weight: 400;
+         font-size: 14px;
+        line-height: 26px;
+    }
+
+}
+
+
+/* interact white */
+
+.sec-7{
+    color: #fff;
+}
+
+.interact-white{
+    display: flex;
+}
+
+.interact-white .left{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 85px;
+    padding-top: 85px;
+    background-color: #0d60d8;
+    width: 60%;
+    margin: auto;
+}
+
+.interact-white .left h1{
+    font-size: 51px;
+    line-height: 64.1px;
+    font-weight: bold;
+}
+
+.interact-white .left p{
+    margin: 15px 0 0;
+}
+
+.left .left-in{
+    margin: auto;
+}
+
+.interact-white .right{
+    width: 40%;
+    background-image: url(../image/PHOTO-2022-08-02-17-33-57.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width:1024px) {
+    .sec-7{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width:992px) {
+    .interact-white{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interact-white .left{
+        width: 100%;
+    }
+
+    .interact-white .right{
+        height: 400px;
+        width: 768px;
+        width: 100%;
+    }
+}
+
+/* feature */
+.feature{
+    background-image: linear-gradient(180deg, rgb(242, 248, 244), rgb(255, 255, 255) 33.01%);
+    padding: 16px 190px;
+}
+
+.feature h4{
+    font-size: 33px;
+    font-weight: bold;
+}
+
+@media (max-width:1024px){
+    .brand{
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    .feature{
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width:600px){
+    .feature h4{
+        padding-bottom: 30px;
+        min-width: 200px;
+    }
+
+    .feature{
+        padding: 16px 70px;
+    }
+}
+
+/* last section */
+footer{
+    background-color: white;
+    padding: 80px 16px 50px;
+    font-size: 12.82px;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#row-edit{
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+}
+
+#row-edit a{
+    text-decoration: none;
+    color: #3D4F60;
+    font-weight: 300;
+}
+
+#row-edit p{
+    font-weight: bold;
+}
+
+.about-2{
+    font-weight: 300;
+    margin: 16px 0px 30px;
+    padding: 26px 0px 0px;
+    font-size: 11px;
+    line-height: 22px;
+}
+.line-2{
+    border: 1px solid rgba(0, 0, 255, 0.050);
+}
